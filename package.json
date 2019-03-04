@@ -1,0 +1,25 @@
+{
+  "name": "wayfarer-backend",
+  "version": "1.0.0",
+  "description": "The back end section for our application Wayfarer that allows users to share tips (AKA posts) about their favorite locations around the world created by Brandon Castillo, Karma Drukpa, Amberly Wang and Michael Claus.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brandonmcastillo/Wayfarer-BackEnd.git"
+  },
+  "author": "Amberly Wang, Karma Drukpa, Brandon Castillo, Michael Claus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brandonmcastillo/Wayfarer-BackEnd/issues"
+  },
+  "homepage": "https://github.com/brandonmcastillo/Wayfarer-BackEnd#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.5.0",
+    "mongoose": "^5.4.17"
+  }
+}
