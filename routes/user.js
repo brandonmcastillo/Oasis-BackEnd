@@ -35,7 +35,7 @@ router.get("/:id", controllers.user.get_user);
 router.put("/:id", controllers.user.update);
 
 // Create a new user
-router.post("/", controllers.user.create);
+// router.post("/", controllers.user.create);
 
 // Delete a user
 router.delete("/:id", controllers.user.remove);
