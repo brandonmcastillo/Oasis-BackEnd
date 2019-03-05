@@ -5,4 +5,6 @@ const
 
 router.get('/', controllers.city.index)
 
+router.get('/', controller.city.get_city)
+
 module.exports = router;
