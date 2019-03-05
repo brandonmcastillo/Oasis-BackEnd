@@ -1,9 +1,11 @@
-const mongoose = require('mongoose')
+const mongoose = require("mongoose");
 
-mongoose.connect('mongod://localhost/Wayfarer-BackEnd')
+mongoose.connect("mongodb://localhost/Wayfarer-BackEnd", {
+  useNewUrlParser: true
+});
 
 module.exports = {
-    City: require('./City'),
-    Post: require('./Post'),
-    User: require('./User')
-}
+  City: require("./City"),
+  Post: require("./Post"),
+  User: require("./User")
+};
