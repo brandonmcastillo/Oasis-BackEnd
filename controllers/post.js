@@ -2,9 +2,9 @@ const db = require('../models')
 
 module.exports = {
     index: (req, res) => {
-        db.Post.find( (err, foundPosts) => {
+        db.User.findOne({_id: req.params.id}, (err, foundUser) => {
             if (err) {console.log(err)}
-            res.json(foundPosts)
+            res.json(foundUser.posts)
         })
     },
     get_post: (req, res) => {
@@ -21,7 +21,7 @@ module.exports = {
             res.json(updatedPost)
         })
     },
-    show: (req, res) => {
+    create: (req, res) => {
         let newPost = new db.Post({
             title: req.body.title,
             content: req.body.content
