@@ -29,8 +29,8 @@ router.use((req, res, next) => {
 
 router.get('/', controllers.user.show)
 
-router.put('/user/:id', (req,res) => {
-    return res.json
-})
+router.get('/:id', controllers.post.index)
+router.get('/:id')
+
 
 module.exports = router
