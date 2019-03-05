@@ -9,7 +9,7 @@ router.get('/:id', controllers.post.get_post)
 
 router.put('/:id', controllers.post.update)
 
-router.post('/', controllers.post.show)
+router.post('/', controllers.post.create)
 
 router.delete('/:id', controllers.post.remove)
 

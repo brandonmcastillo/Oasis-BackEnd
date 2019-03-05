@@ -33,19 +33,19 @@ router.get('/', controllers.user.show)
 
 
 // Get all the posts made by one user
-router.get('/:id/post', controller.post.index)
+router.get('/:id/post', controller.user.index)
 
 // Get one post by id made by one user
-router.get('/:id', controllers.post.get_post)
+router.get('/:id', controllers.user.get_post)
 
 // Update a post made by a user
-router.put('/:userId/post/:id', controllers.post.update)
+router.put('/:userId/post/:id', controllers.user.update)
 
 // Create a new post
 // router.post('/', controllers.post.create)
 
 // Delete a post
-router.delete('/:userId/post/:id', controllers.post.remove)
+router.delete('/:userId/post/:id', controllers.user.remove)
 
 
 module.exports = router
