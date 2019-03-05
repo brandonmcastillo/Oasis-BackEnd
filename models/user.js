@@ -1,5 +1,5 @@
 const mongoose =  require ('mongoose');
-const Post = require('./post')
+const Post = require('./Post')
 
 const UserSchema = mongoose.Schema({
     username: String,
@@ -12,7 +12,7 @@ const UserSchema = mongoose.Schema({
     password: { type: String, required: true , select: false},
     city: String,
     dateJoined: Date,
-    posts: [Post.schema]
+    posts: [ Post.schema ]
 })
 
 userSchema.set('toJSON', {

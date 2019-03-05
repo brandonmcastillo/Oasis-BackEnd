@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const Post = require('./post')
+const Post = require('./Post')
 
 const CitySchema = mongoose.Schema({
     name: String,
