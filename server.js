@@ -2,7 +2,7 @@ const
     express = require('express')
     cors = require('cors')
     userRoutes = require('./routes/user')
-    postRoutes = require('./routes/post')
+    // postRoutes = require('./routes/post')
     cityRoutes = require('./routes/city')
     bodyParser = require('body-parser')
     
