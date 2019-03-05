@@ -1,10 +1,9 @@
-const
-    express = require('express'),
-    router = express.Router()
-    // controllers = require('../controllers')
+const express = require("express");
+const router = express.Router();
+const controllers = require("../controllers");
 
-router.get('/', controllers.city.index)
+router.get("/", controllers.city.index);
 
-router.get('/', controller.city.get_city)
+router.get("/", controllers.city.get_city);
 
 module.exports = router;
