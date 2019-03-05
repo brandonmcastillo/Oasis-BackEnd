@@ -12,7 +12,6 @@ const UserSchema = mongoose.Schema({
     password: { type: String, required: true , select: false},
     city: String,
     dateJoined: Date,
-    // posts: [ Post.schema ]
 })
 
 userSchema.set('toJSON', {
