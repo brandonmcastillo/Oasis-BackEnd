@@ -27,25 +27,19 @@ router.use((req, res, next) => {
     }
 })
 
-router.get('/', controllers.user.show)
+router.get('/', controllers.user.index)
 
-// router.get('/:id', controllers.post.index)
+// Get one user
+router.get('/:id', controller.user.get_user)
 
+// Update a user
+router.put('/:id', controllers.user.update)
 
-// Get all the posts made by one user
-router.get('/:id/post', controller.user.index)
+// Create a new user
+router.post('/', controllers.user.create)
 
-// Get one post by id made by one user
-router.get('/:id', controllers.user.get_post)
-
-// Update a post made by a user
-router.put('/:userId/post/:id', controllers.user.update)
-
-// Create a new post
-// router.post('/', controllers.post.create)
-
-// Delete a post
-router.delete('/:userId/post/:id', controllers.user.remove)
+// Delete a user
+router.delete('/:id', controllers.user.remove)
 
 
 module.exports = router
