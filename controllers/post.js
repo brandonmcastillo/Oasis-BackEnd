@@ -67,9 +67,13 @@ module.exports = {
     );
   },
   create: (req, res) => {
+    let userId = req.params.userId
+    let cityId = req.params.cityId
     let newPost = new db.Post({
       title: req.body.title,
-      content: req.body.content
+      content: req.body.content,
+      userId: userId,
+      cityId: cityId
     });
     newPost.save((err, savedPost) => {
       if (err) {
