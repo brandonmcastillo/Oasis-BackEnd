@@ -21,7 +21,7 @@ app.get("/api", (req, res) => {
     message: "Wayfarer API",
     documentationURL:
       "https://github.com/brandonmcastillo/Wayfarer-BackEnd/blob/master/README.md",
-    baseURL: "", //heroku URL goes here
+    baseURL: "https://radiant-tor-11139.herokuapp.com/",
     apiEndpoint: {
       method: "GET",
       path: "/api",
