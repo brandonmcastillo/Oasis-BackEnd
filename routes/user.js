@@ -3,9 +3,9 @@ const router = express.Router();
 const jwt = require("jsonwebtoken");
 const controllers = require("../controllers");
 
-// router.post("/signup", controllers.user.signup);
+router.post("/signup", controllers.user.signup);
 
-// router.post("/login", controllers.user.login);
+router.post("/login", controllers.user.login);
 
 // router.use((req, res, next) => {
 //   console.log("activated");
