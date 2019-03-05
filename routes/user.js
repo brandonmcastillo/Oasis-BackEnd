@@ -25,6 +25,7 @@ const controllers = require("../controllers");
 //   }
 // });
 
+// Get all the users
 router.get("/", controllers.user.index);
 
 // Get one user
