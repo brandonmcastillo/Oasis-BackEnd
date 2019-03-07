@@ -74,14 +74,14 @@ function signupUser(req, res) {
 
 function loginUser(req, res) {
   //ping db to find all users with req.body.email
-  db.User.find({ email: req.body.email })
+  db.User.find({ username: req.body.username })
     .select("+password") //adding .select("+password") overrides the select: false atrribute in the model.. so it includes the password on the return
     .exec()
     .then(users => {
       //this returns an array of the results, there should be at least 1 returned
       if (users.length < 1) {
         return res.status(401).json({
-          message: "Email/Password incorrect"
+          message: "Username/Password incorrect"
         });
       }
       console.log(users);
