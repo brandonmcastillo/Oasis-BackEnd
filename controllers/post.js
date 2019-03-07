@@ -2,21 +2,27 @@ const db = require("../models");
 
 module.exports = {
   index: (req, res) => {
-    db.Post.find((err, foundPosts) => {
-      if (err) {
-        console.log(err);
-      }
-      res.json(foundPosts);
-    });
+    db.Post.find()
+      .populate("userId")
+      .populate("cityId")
+      .exec((err, foundPosts) => {
+        if (err) {
+          console.log(err);
+        }
+        res.json(foundPosts);
+      });
   },
   get_post: (req, res) => {
     let postId = req.params.id;
-    db.Post.findOne({ _id: postId }, (err, foundPost) => {
-      if (err) {
-        console.log(err);
-      }
-      res.json(foundPost);
-    });
+    db.Post.findOne({ _id: postId })
+      .populate("userId")
+      .populate("cityId")
+      .exec((err, foundPost) => {
+        if (err) {
+          console.log(err);
+        }
+        res.json(foundPost);
+      });
   },
   // get_user: (req, res) => {
   //     let postId = req.params.id
@@ -36,21 +42,27 @@ module.exports = {
   // },
   find_by_user: (req, res) => {
     let userId = req.params.userId;
-    db.Post.find({ userId: userId }, (err, foundPosts) => {
-      if (err) {
-        console.log(err);
-      }
-      res.json(foundPosts);
-    });
+    db.Post.find({ userId: userId })
+      .populate("userId")
+      .populate("cityId")
+      .exec((err, foundPosts) => {
+        if (err) {
+          console.log(err);
+        }
+        res.json(foundPosts);
+      });
   },
   find_by_city: (req, res) => {
     let cityId = req.params.cityId;
-    db.Post.find({ cityId: cityId }, (err, foundPosts) => {
-      if (err) {
-        console.log(err);
-      }
-      res.json(foundPosts);
-    });
+    db.Post.find({ cityId: cityId })
+      .populate("userId")
+      .populate("cityId")
+      .exec((err, foundPosts) => {
+        if (err) {
+          console.log(err);
+        }
+        res.json(foundPosts);
+      });
   },
   update: (req, res) => {
     let postId = req.params.id;
@@ -67,8 +79,8 @@ module.exports = {
     );
   },
   create: (req, res) => {
-    let userId = req.params.userId
-    let cityId = req.params.cityId
+    let userId = req.params.userId;
+    let cityId = req.params.cityId;
     let newPost = new db.Post({
       title: req.body.title,
       content: req.body.content,
