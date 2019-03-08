@@ -17,7 +17,7 @@ const city_list = [
   },
   {
     name: "Sydney",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCxMk3y1QsKc1lsguzIgl7pTvDyBW88XRuMNz64OziFcb5U9EKbg"
+    image: "https://www.aso2018sydney.com.au/wp-content/uploads/sydney_slider_02-600x200_c.jpg"
   }
 ];
 
