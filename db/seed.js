@@ -55,58 +55,76 @@ const user_list = [
 const post_list = [
   {
     title: "Karma's new post - Karma",
-    content: "This is a nice post",
-    userId: "Karma",
+    content: "This place is so expensive!!!!",
+    userId: "Michael",
     cityId: "San Francisco"
   },
   {
     title: "Michael's new post - Michael",
-    content: "Oh nice",
+    content: "Definitely coming back here next Summer!",
     userId: "Michael",
     cityId: "London"
   },
   {
     title: "Amberly's new post - Amberly",
-    content: "APIs",
+    content: "This place was really loud for New Years! 10/10",
     userId: "Amberly",
     cityId: "New York"
   },
   {
     title: "Brandon's new post - Brandon",
-    content: "Another new post - React",
+    content: "Wow. I was born here. It's nice being back.",
     userId: "Brandon",
     cityId: "San Francisco"
   },
   {
     title: "Another new post, nice - Michael",
-    content: "Oh nice",
+    content: "It's summer of 2019 and I came back! Highly advise going here!",
     userId: "Michael",
     cityId: "London"
   },
   {
     title: "And even more posts - Karma",
-    content: "Oh nice",
+    content: "General Assembly is based here and I love it.",
     userId: "Karma",
     cityId: "San Francisco"
   },
   {
     title: "Another post from MICHAEL",
-    content: "cool",
+    content: "Spent about a week here and I'm flabbergasted",
     userId: "Michael",
     cityId: "London"
   },
   {
     title: "Amberly's another post",
-    content: "Oh nice",
+    content: "I went here for vacation!",
     userId: "Amberly",
     cityId: "London"
   },
   {
     title: "even another post form michael for the seed data",
-    content: "Oh nice",
+    content: "The pizza is yummy",
     userId: "Michael",
     cityId: "New York"
-  }
+  },
+  {
+    title: "Go Karma",
+    content: "I went here for vacation!",
+    userId: "Karma",
+    cityId: "Sydney"
+  },
+  {
+    title: "Brandons first post",
+    content: "I went here for vacation too!",
+    userId: "Brandon",
+    cityId: "Sydney"
+  },
+  {
+    title: "Brandons second post!",
+    content: "I went here and became broke!!",
+    userId: "Brandon",
+    cityId: "Sydney"
+  },
 ];
 
 db.User.deleteMany({}, (err, user) => {
