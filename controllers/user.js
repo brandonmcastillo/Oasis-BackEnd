@@ -124,6 +124,7 @@ function loginUser(req, res) {
 }
 
 module.exports = {
+  // get all the users
   index: (req, res) => {
     db.User.find((err, foundUsers) => {
       if (err) {
@@ -132,6 +133,7 @@ module.exports = {
       res.json(foundUsers);
     });
   },
+  // get one user
   get_user: (req, res) => {
     let userId = req.params.id;
     db.User.findOne({ _id: userId }, (err, foundUser) => {
@@ -141,6 +143,7 @@ module.exports = {
       res.json(foundUser);
     });
   },
+  // update a user
   update: (req, res) => {
     let userId = req.params.id;
     db.User.findOneAndUpdate(
