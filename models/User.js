@@ -13,11 +13,5 @@ const UserSchema = mongoose.Schema({
   dateJoined: Date
 });
 
-// userSchema.set('toJSON', {
-//     transform: function(doc, ret, opt) {
-//         delete ret['password']
-//       e  return ret
-//     }
-//     })
 
 module.exports = mongoose.model("User", UserSchema);

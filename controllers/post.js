@@ -1,6 +1,7 @@
 const db = require("../models");
 
 module.exports = {
+  // get all the posts
   index: (req, res) => {
     db.Post.find()
       .populate("userId")
@@ -12,6 +13,7 @@ module.exports = {
         res.json(foundPosts);
       });
   },
+  // get one post
   get_post: (req, res) => {
     let postId = req.params.id;
     db.Post.findOne({ _id: postId })
@@ -24,22 +26,7 @@ module.exports = {
         res.json(foundPost);
       });
   },
-  // get_user: (req, res) => {
-  //     let postId = req.params.id
-  //     // let userId = req.params.userId
-  //     db.Post.findOne( {_id: postId}, (err, foundPost) => {
-  //         if (err) {console.log(err)}
-  //         res.json(foundUser.userId)
-  //     })
-  // },
-  // get_city: (req, res) => {
-  //     let postId = req.params.id
-  //     // let userId = req.params.userId
-  //     db.Post.findOne( {_id: postId}, (err, foundPost) => {
-  //         if (err) {console.log(err)}
-  //         res.json(foundUser.cityId)
-  //     })
-  // },
+  // get all the posts by one user
   find_by_user: (req, res) => {
     let userId = req.params.userId;
     db.Post.find({ userId: userId })
@@ -52,6 +39,7 @@ module.exports = {
         res.json(foundPosts);
       });
   },
+  // get all the posts from one city
   find_by_city: (req, res) => {
     let cityId = req.params.cityId;
     db.Post.find({ cityId: cityId })
@@ -64,6 +52,7 @@ module.exports = {
         res.json(foundPosts);
       });
   },
+  // update a post
   update: (req, res) => {
     let postId = req.params.id;
     db.Post.findOneAndUpdate(
@@ -78,6 +67,7 @@ module.exports = {
       }
     );
   },
+  // create a new post
   create: (req, res) => {
     let userId = req.params.userId;
     let cityId = req.params.cityId;
@@ -94,6 +84,7 @@ module.exports = {
       res.json(savedPost);
     });
   },
+  // delete a post
   remove: (req, res) => {
     let postId = req.params.id;
     db.Post.findOneAndDelete({ _id: postId }, (err, deletedPost) => {
