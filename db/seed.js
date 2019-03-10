@@ -24,28 +24,28 @@ const city_list = [
 const user_list = [
   {
     username: "Karma",
-    email: "email@email.email",
+    email: "karma@email.com",
     password: "123",
     city: "San Francisco",
     dateJoined: new Date()
   },
   {
     username: "Michael",
-    email: "email@michae.mike",
+    email: "michael@email.com",
     password: "123",
     city: "San Francisco",
     dateJoined: new Date()
   },
   {
     username: "Amberly",
-    email: "amberly@amberly.amberly",
+    email: "amberly@email.com",
     password: "123",
     city: "San Francisco",
     dateJoined: new Date()
   },
   {
     username: "Brandon",
-    email: "Bra@ndon.come",
+    email: "brandon@email.com",
     password: "123",
     city: "San Francisco",
     dateJoined: new Date()
@@ -54,74 +54,74 @@ const user_list = [
 
 const post_list = [
   {
-    title: "Karma's new post - Karma",
-    content: "This place is so expensive!!!!",
+    title: "My pockets are empty and so is my patience",
+    content: "This place is so expensive! Traffic sucks!",
     userId: "Michael",
     cityId: "San Francisco"
   },
   {
-    title: "Michael's new post - Michael",
+    title: "This was an amazing trip!",
     content: "Definitely coming back here next Summer!",
-    userId: "Michael",
+    userId: "Karma",
     cityId: "London"
   },
   {
-    title: "Amberly's new post - Amberly",
+    title: "So great. Go here.",
     content: "This place was really loud for New Years! 10/10",
     userId: "Amberly",
     cityId: "New York"
   },
   {
-    title: "Brandon's new post - Brandon",
+    title: "I love San Francisco",
     content: "Wow. I was born here. It's nice being back.",
     userId: "Brandon",
     cityId: "San Francisco"
   },
   {
-    title: "Another new post, nice - Michael",
-    content: "It's summer of 2019 and I came back! Highly advise going here!",
+    title: "Beautiful area",
+    content: "I went here for vacation and I loved every second of it. !",
     userId: "Michael",
     cityId: "London"
   },
   {
-    title: "And even more posts - Karma",
-    content: "General Assembly is based here and I love it.",
+    title: "General Assembly",
+    content: "General Assembly is based here and I would go back here in a heartbeat.",
     userId: "Karma",
     cityId: "San Francisco"
   },
   {
-    title: "Another post from MICHAEL",
-    content: "Spent about a week here and I'm flabbergasted",
+    title: "I'm back!",
+    content: "Spent about a week here again and I'm flabbergasted",
     userId: "Michael",
     cityId: "London"
   },
   {
-    title: "Amberly's another post",
-    content: "I went here for vacation!",
+    title: "Foodie!",
+    content: "Check out the pubs! Always a good time with friends",
     userId: "Amberly",
     cityId: "London"
   },
   {
-    title: "even another post form michael for the seed data",
-    content: "The pizza is yummy",
+    title: "Busy area",
+    content: "New York is super busy and a fast paced environment. The pizza is yummy. Can't go wrong.",
     userId: "Michael",
     cityId: "New York"
   },
   {
-    title: "Go Karma",
-    content: "I went here for vacation!",
+    title: "Live your best life!",
+    content: "I went here for vacation and it was a pleasant experience!",
     userId: "Karma",
     cityId: "Sydney"
   },
   {
-    title: "Brandons first post",
-    content: "I went here for vacation too!",
+    title: "Also living your best life",
+    content: "I went here for vacation too and it was also a pleasant experience!",
     userId: "Brandon",
     cityId: "Sydney"
   },
   {
-    title: "Brandons second post!",
-    content: "I went here and became broke!!",
+    title: "Went home tired and broke!",
+    content: "I had a great time and it was worth every penny.",
     userId: "Brandon",
     cityId: "Sydney"
   },
