@@ -1,5 +1,5 @@
 # Oasis-BackEnd
-The back end section for our application Oasis that allows users to share tips (AKA posts) about their favorite locations around the world created by Brandon Castillo, Karma Drukpa, Amberly Wang and Michael Claus.
+The back end section of Oasis. Oasis is a MERN stack travel community application where users can share tips about their favorite locations around the world. Oasis was created by Brandon Castillo, Karma Drukpa, Amberly Wang and Michael Claus.
 ## API Endpoints
 https://radiant-tor-11139.herokuapp.com/api
 ## Technologies Used
