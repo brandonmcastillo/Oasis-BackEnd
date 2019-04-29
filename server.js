@@ -20,7 +20,7 @@ app.get("/api", (req, res) => {
   res.json({
     message: "Wayfarer API",
     documentationURL:
-      "https://github.com/brandonmcastillo/Wayfarer-BackEnd/blob/master/README.md",
+      "https://github.com/brandonmcastillo/Oasis-BackEnd/blob/master/README.md",
     baseURL: "https://radiant-tor-11139.herokuapp.com/",
     apiEndpoint: {
       method: "GET",
