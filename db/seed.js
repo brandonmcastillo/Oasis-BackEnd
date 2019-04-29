@@ -1,5 +1,5 @@
 //comment
-// const mongoose = require('mongoose')
+const mongoose = require('mongoose')
 const db = require("../models/index");
 
 const city_list = [
