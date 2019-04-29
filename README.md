@@ -5,7 +5,7 @@ The back end section for our application Oasis. Oasis is a travel community appl
 Our Front-End code for the application can be found here : https://github.com/brandonmcastillo/Oasis-FrontEnd
 
 ## API Endpoints
-https://radiant-tor-11139.herokuapp.com/api
+https://oasis-backend.herokuapp.com/api
 ## Technologies Used
 - Javascript
 - Node.js
